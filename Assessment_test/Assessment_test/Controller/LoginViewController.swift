@@ -14,6 +14,13 @@ extension String {
     }
 }
 class LoginViewController: UIViewController {
+    
+    struct UserModel {
+        var name : String?
+        var username : String?
+        var phone : String?
+    }
+    private var userModel = UserModel()
 
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -43,7 +50,12 @@ class LoginViewController: UIViewController {
                 }
                 else {
                     // login successful
-                    
+                    self.userNameTextField.text = nil
+                    self.passwordTextField.text = nil
+                    self.userModel = UserModel(name: data.value(forKey: "fullName") as? String, username: username, phone: data.value(forKey: "phone") as? String)
+                    DispatchQueue.main.async {
+                        self.performSegue(withIdentifier: "goto_dashboard", sender: self)
+                    }
                 }
             }
         }
@@ -84,14 +96,21 @@ class LoginViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "goto_dashboard" {
+            let nextVc = segue.destination as! UINavigationController
+            let vc = nextVc.topViewController as! DashboardViewController
+            vc.userModel.name = self.userModel.name
+            vc.userModel.phone = self.userModel.phone
+            vc.userModel.username = self.userModel.username
+        }
     }
-    */
+    
 
 }

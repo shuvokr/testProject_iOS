@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Assessment_test.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>2D81D67E02203841124478D8259721F613FDC29F</string>
+				<key>dateExpires</key>
+				<string>16/11/21</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>2D81D67E02203841124478D8259721F613FDC29F</string>
+						<key>dateExpires</key>
+						<string>16/11/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Alamofire.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>4NU36J8PP2</string>
+						<key>name</key>
+						<string>Debugger Lab</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>2D81D67E02203841124478D8259721F613FDC29F</string>
+						<key>dateExpires</key>
+						<string>16/11/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>IQKeyboardManager.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>4NU36J8PP2</string>
+						<key>name</key>
+						<string>Debugger Lab</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>2D81D67E02203841124478D8259721F613FDC29F</string>
+						<key>dateExpires</key>
+						<string>16/11/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>SwiftyJSON.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>4NU36J8PP2</string>
+						<key>name</key>
+						<string>Debugger Lab</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>4NU36J8PP2.com.mawaw.uhunter</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>4NU36J8PP2</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>4NU36J8PP2.com.mawaw.uhunter</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Assessment_test.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>b8203e58-88b6-4ddc-9383-8ef56b0f69eb</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.mawaw.uhunter</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>4NU36J8PP2</string>
+				<key>name</key>
+				<string>Debugger Lab</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

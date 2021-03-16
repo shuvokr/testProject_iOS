@@ -89,11 +89,20 @@
                         <outlet property="passwordTextField" destination="duZ-80-SFi" id="xrB-Hu-4kh"/>
                         <outlet property="userNameTextField" destination="Wlu-le-2hL" id="oBz-9a-OiS"/>
                         <segue destination="2dd-oW-AXU" kind="presentation" identifier="goto_registration_page" modalPresentationStyle="fullScreen" id="L56-Lb-KpF"/>
+                        <segue destination="o7y-83-hYS" kind="presentation" identifier="goto_dashboard" modalPresentationStyle="fullScreen" id="yRA-cd-jqP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPC-ab-BEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-393" y="159"/>
+        </scene>
+        <!--dashboard_sid-->
+        <scene sceneID="As4-Xe-zEB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DashboardStoryboard" referencedIdentifier="dashboard_sid" id="o7y-83-hYS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKl-m3-3bS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="111"/>
         </scene>
         <!--registration_sid-->
         <scene sceneID="lGQ-qW-itZ">

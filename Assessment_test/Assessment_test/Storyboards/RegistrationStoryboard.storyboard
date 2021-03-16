@@ -93,6 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="x0y-Vw-53K">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="e89-x0-Qhw">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="goPrevAction:" destination="9P3-U6-MSj" id="nho-I3-MTk"/>
                             </connections>

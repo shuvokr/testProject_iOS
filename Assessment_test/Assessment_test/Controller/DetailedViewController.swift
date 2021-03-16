@@ -6,13 +6,26 @@
 //
 
 import UIKit
+import WebKit
+class DetailedViewController: UIViewController, WKUIDelegate {
 
-class DetailedViewController: UIViewController {
-
+    var webView: WKWebView!
+    var myURL : URL?
+        
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
+    }
+    @IBAction func backAction(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 
